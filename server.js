@@ -1,3 +1,4 @@
+// Dependencies
 var express = require("express");
 
 // Express application
@@ -7,8 +8,8 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 
 // Express app data parsing
-app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // Router
