@@ -1,4 +1,6 @@
+// db.json dependency because information is being read/written there via api call
 var db = require("../db/db.json");
+
 
 module.exports = function(app){
   app.get("/api/notes", function(req, res) {
